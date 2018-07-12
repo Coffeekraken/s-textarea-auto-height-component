@@ -1,0 +1,2 @@
+import STextareaAutoHeightComponent from './js/STextareaAutoHeightComponent'
+export default STextareaAutoHeightComponent
