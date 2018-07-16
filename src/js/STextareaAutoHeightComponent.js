@@ -40,6 +40,9 @@ export default class Component extends __native(window.HTMLTextAreaElement) {
    * Set the textarea height depending on the content
    */
   setTextareaHeight () {
+    // disable all transition during the resize
+    this.style.transition = 'none'
+
     // set the height to 1px
     // so we will have a scroll and we will be able to get
     // his height to apply as the component height
@@ -50,5 +53,10 @@ export default class Component extends __native(window.HTMLTextAreaElement) {
 
     // apply the new height to the textarea
     this.style.height = `${height}px`
+
+    // enable back the transitions
+    setTimeout(() => {
+      this.style.transition = ''
+    })
   }
 }
