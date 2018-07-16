@@ -41,7 +41,7 @@ export default class Component extends __native(window.HTMLTextAreaElement) {
    */
   setTextareaHeight () {
     // disable all transition during the resize
-    this.style.transition = 'none';
+    this.style.transition = 'none'
 
     // set the height to 1px
     // so we will have a scroll and we will be able to get
@@ -56,7 +56,7 @@ export default class Component extends __native(window.HTMLTextAreaElement) {
 
     // enable back the transitions
     setTimeout(() => {
-      this.style.transition = '';
+      this.style.transition = ''
     })
   }
 }
