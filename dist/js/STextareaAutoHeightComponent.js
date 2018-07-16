@@ -70,6 +70,11 @@ var Component = function (_native) {
   }, {
     key: 'setTextareaHeight',
     value: function setTextareaHeight() {
+      var _this3 = this;
+
+      // disable all transition during the resize
+      this.style.transition = 'none';
+
       // set the height to 1px
       // so we will have a scroll and we will be able to get
       // his height to apply as the component height
@@ -80,6 +85,11 @@ var Component = function (_native) {
 
       // apply the new height to the textarea
       this.style.height = height + 'px';
+
+      // enable back the transitions
+      setTimeout(function () {
+        _this3.style.transition = '';
+      });
     }
   }], [{
     key: 'defaultProps',
