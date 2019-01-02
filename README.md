@@ -29,6 +29,8 @@
 
 Extension to the textarea tag to privide it the capacility to adjust his height automatically depending on his content.
 
+[![View demo](http://components.coffeekraken.io/assets/img/view-demo.png)](http://components.coffeekraken.io/app/s-textarea-auto-height-component)
+
 ## Table of content
 
 1. **[Demo](http://components.coffeekraken.io/app/s-textarea-auto-height-component)**
