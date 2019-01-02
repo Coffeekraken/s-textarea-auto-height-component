@@ -1,6 +1,6 @@
 {
   "name": "coffeekraken-s-textarea-auto-height-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extension to the textarea tag to privide it the capacility to adjust his height automatically depending on his content",
   "main": "dist/index.js",
   "homepage": "http://coffeekraken.io",
